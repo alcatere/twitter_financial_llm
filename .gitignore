@@ -3,6 +3,7 @@ results/
 notebooks/
 models/
 twitter_financial_sentiment/
+model_evaluate.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -6,11 +6,10 @@ import torch
 import torch.nn.functional as F
 
 # Load your trained model and tokenizer
-model_path = "./models/sentiment_twitter_financial_model"  # Path to your trained model
-tokenizer_path = "./models/sentiment_twitter_financial_tokenizer"
+checkpoint = 'alcatere/twitter_financial_sentiment'  # Path to your trained model
 
-tokenizer = AutoTokenizer.from_pretrained(tokenizer_path)
-model = AutoModelForSequenceClassification.from_pretrained(model_path)
+tokenizer = AutoTokenizer.from_pretrained(checkpoint)
+model = AutoModelForSequenceClassification.from_pretrained(checkpoint)
 
 # Define label mapping
 labels = {
@@ -21,8 +20,16 @@ labels = {
 
 # Streamlit app
 st.title("Text Sentiment Classifier from Twitter Financial News")
-st.write('''Enter a text below to classify its sentiment. \n
-         The classifier can predict one of the following sentiments: Bearish, Bullish, or Neutral.''')
+
+
+mkdown = """## Model labels
+The dataset consists of financial tweets, preprocessed and labeled into three sentiment categories:
+- **Bullish**: Indicates optimism. Investors believe prices will increase in the future. 📈
+- **Neutral**: Tweets expressing neutral or factual information. 🙂
+- **Bearish**:  Indicates pessimism. Investors believe prices will decrease in the future.📉""" 
+
+st.write(mkdown)
+st.write('Enter a text below to classify its sentiment.')
 
 # Input text
 user_input = st.text_area("Input Text", placeholder="Type your financial text here...")
