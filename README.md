@@ -33,16 +33,16 @@ Financial sentiment analysis is crucial for understanding how markets respond to
 
 ## Dataset
 The dataset consists of financial tweets, preprocessed and labeled into three sentiment categories:
-- **Positive**: Tweets indicating optimism or positive financial outlook.
+- **Bullish**: Indicates optimism. Investors believe prices will increase in the future.
 - **Neutral**: Tweets expressing neutral or factual information.
-- **Negative**: Tweets conveying pessimism or negative financial outlook.
+- **Bearish**:  Indicates pessimism. Investors believe prices will decrease in the future.
 
 ### Sample Data Format
-| Tweet                             | Sentiment   |
-|-----------------------------------|-------------|
-| "Stock prices are soaring today!" | Positive    |
-| "Market seems stable."            | Neutral     |
-| "Economic downturn is inevitable" | Negative    |
+| Tweet                                 | Sentiment   |
+|---------------------------------------|-------------|
+| "$SAN: Deutsche Bank cuts to Hold"    | Bearish    |
+| "Market seems stable."                | Neutral    |
+| "AMD +1.3% after Cowen's target lift" | Bullish    |
 
 ---
 
@@ -62,5 +62,5 @@ Ensure you have Python 3.8 or later installed.
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/twitter-financial-analysis.git
-cd twitter-financial-analysis
+git clone https://github.com/alcatere/twitter_financial_llm.git
+cd twitter_financial_llm
