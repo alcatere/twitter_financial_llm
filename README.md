@@ -1,6 +1,9 @@
 # Twitter Financial Analysis 🚀
 
-This project uses Natural Language Processing (NLP) to analyze financial-related tweets and classify their sentiment into categories (e.g., Positive, Neutral, Negative) to gain insights into public sentiment around financial topics.
+This project uses Natural Language Processing (NLP) to analyze financial-related tweets and classify their sentiment into categories (e.g., Bearish, Neutral, Bullish) to gain insights into public sentiment around financial topics.
+
+### Streamlit application
+https://twitter-financial-sentiment.streamlit.app/
 
 ## Table of Contents
 - [Overview](#overview)
@@ -64,7 +67,4 @@ Ensure you have Python 3.8 or later installed.
 ```bash
 git clone https://github.com/alcatere/twitter_financial_llm.git
 cd twitter_financial_llm
-
-### Streamlit application
-https://twitter-financial-sentiment.streamlit.app/
 
