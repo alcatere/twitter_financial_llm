@@ -1,3 +1,9 @@
+gen-ai/
+results/
+notebooks/
+models/
+twitter_financial_sentiment/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

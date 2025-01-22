@@ -1,0 +1,10 @@
+requests
+streamlit
+fastapi
+transformers
+torch
+pandas
+numpy
+pydantic
+uvicorn
+huggingface_hub
