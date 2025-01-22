@@ -64,3 +64,7 @@ Ensure you have Python 3.8 or later installed.
 ```bash
 git clone https://github.com/alcatere/twitter_financial_llm.git
 cd twitter_financial_llm
+
+### Streamlit application
+https://twitter-financial-sentiment.streamlit.app/
+
